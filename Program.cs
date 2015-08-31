@@ -13,27 +13,27 @@ namespace MyFirstApp
             int a = 45;
             int b = 34;
 
-            Console.WriteLine("1. Add 2.  Sub 3.  Mul 4.  Div ");
-            int ch = int.Parse(Console.ReadLine());
+            Console.WriteLine("+. Add -.  Sub *.  Mul /.  Div ");
+            string ch = (Console.ReadLine());
 
             switch (ch)
             {
 
-                case 1:
+                case "+":
                     Console.WriteLine(a + b);
                     break;
 
-                case 2:
+                case "-":
                     Console.WriteLine(a - b);
                     break;
 
 
-                case 3:
+                case "*":
                     Console.WriteLine(a * b);
                     break;
 
 
-                case 4:
+                case "/":
                     Console.WriteLine((double)a / b);
                     break;
 
