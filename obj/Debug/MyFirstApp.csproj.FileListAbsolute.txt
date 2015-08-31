@@ -1,1 +1,6 @@
 c:\users\sam.sam11-pc\documents\visual studio 2015\Projects\MyFirstApp\MyFirstApp\bin\Debug\MyFirstApp.exe.config
+C:\Users\Sam.Sam11-PC\Documents\Visual Studio 2015\Projects\MyFirstApp\MyFirstApp\bin\Debug\MyFirstApp.exe
+C:\Users\Sam.Sam11-PC\Documents\Visual Studio 2015\Projects\MyFirstApp\MyFirstApp\bin\Debug\MyFirstApp.pdb
+C:\Users\Sam.Sam11-PC\Documents\Visual Studio 2015\Projects\MyFirstApp\MyFirstApp\obj\Debug\MyFirstApp.csprojResolveAssemblyReference.cache
+C:\Users\Sam.Sam11-PC\Documents\Visual Studio 2015\Projects\MyFirstApp\MyFirstApp\obj\Debug\MyFirstApp.exe
+C:\Users\Sam.Sam11-PC\Documents\Visual Studio 2015\Projects\MyFirstApp\MyFirstApp\obj\Debug\MyFirstApp.pdb
