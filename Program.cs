@@ -10,35 +10,16 @@ namespace MyFirstApp
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 10; i++)
-            {
-                Console.WriteLine("Manzoor");
+            int n;
+            do{ 
+                n = int.Parse(Console.ReadLine());
             }
+            while (n!= 0);
 
-            for (int i = 1; i <= 10; i++)
-            {
-                Console.WriteLine(i);
-            }
-
-            for (int i = 10; i >= 1; i--)
-            {
-                Console.WriteLine(i);
-            }
-
-            for (int i = 1; i < 100; i++)
-            {
-                if (i % 2 == 1)
-                    Console.WriteLine(i);
-            }
-
-            int n = 6;
-
-            for (int i = 1; i <= 10; i++)
-            {
-                Console.WriteLine("{0} * {1} = {2}", n, i, n * i);
-            }
-            Console.ReadLine();
+            Console.WriteLine("You have entered " + n);
+ 
 
         }
     }
 }
+
