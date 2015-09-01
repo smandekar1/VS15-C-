@@ -10,21 +10,47 @@ namespace MyFirstApp
     {
         static void Main(string[] args)
         {
-            int[] A;
-            A = new int[10];
+            //int[] a;
+            //A = new int[5];
 
-            A[0] = 67;
-            A[1] = A[2] = A[3] = 56;
-            A[4] = A[1] + A[2] + A[3];
-            A[5] = A[6] = A[7] = A[4] - 10;
-            A[8] = A[9] = int.Parse(Console.ReadLine());
 
-            for(int i=0; i<10; i++)
+            int[] A = new int[5];
+
+            Console.WriteLine("Enter 5 Element");
+            for (int i = 0; i < A.Length; i++)
+            {
+                A[i] = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("Eleements that you entered are : ");
+            for (int i = 0; i < A.Length; i++)
             {
                 Console.WriteLine(A[i]);
             }
-            Console.ReadLine();
 
+            Array.Sort(A);
+            Array.Reverse(A);
+            
+
+            Console.WriteLine("Eleements that you sorted are : ");
+            for (int i = 0; i < A.Length; i++)
+            {
+                Console.WriteLine(A[i]);
+            }
+
+            int sum = 0;
+            for (int i = 0; i < A.Length; i++)
+            {
+                sum = sum + A[i];
+            }
+            Console.WriteLine("Sum is "+sum);
+
+            //foreach(int k in A)
+            //{
+            //    if(k%2==0)
+            //    Console.WriteLine(k);
+            //}
+
+            Console.ReadLine();
         }
     }
 }
