@@ -10,14 +10,20 @@ namespace MyFirstApp
     {
         static void Main(string[] args)
         {
-            int n;
-            do{ 
-                n = int.Parse(Console.ReadLine());
-            }
-            while (n!= 0);
+            int[] A;
+            A = new int[10];
 
-            Console.WriteLine("You have entered " + n);
- 
+            A[0] = 67;
+            A[1] = A[2] = A[3] = 56;
+            A[4] = A[1] + A[2] + A[3];
+            A[5] = A[6] = A[7] = A[4] - 10;
+            A[8] = A[9] = int.Parse(Console.ReadLine());
+
+            for(int i=0; i<10; i++)
+            {
+                Console.WriteLine(A[i]);
+            }
+            Console.ReadLine();
 
         }
     }
