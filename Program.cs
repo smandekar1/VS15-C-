@@ -10,38 +10,33 @@ namespace MyFirstApp
     {
         static void Main(string[] args)
         {
-            int a = 45;
-            int b = 34;
-
-            Console.WriteLine("+. Add -.  Sub *.  Mul /.  Div ");
-            string ch = (Console.ReadLine());
-
-            switch (ch)
+            for (int i = 0; i < 10; i++)
             {
-
-                case "+":
-                    Console.WriteLine(a + b);
-                    break;
-
-                case "-":
-                    Console.WriteLine(a - b);
-                    break;
-
-
-                case "*":
-                    Console.WriteLine(a * b);
-                    break;
-
-
-                case "/":
-                    Console.WriteLine((double)a / b);
-                    break;
-
-                default:
-                    Console.WriteLine("Invalid Input");
-                    break;
+                Console.WriteLine("Manzoor");
             }
 
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine(i);
+            }
+
+            for (int i = 10; i >= 1; i--)
+            {
+                Console.WriteLine(i);
+            }
+
+            for (int i = 1; i < 100; i++)
+            {
+                if (i % 2 == 1)
+                    Console.WriteLine(i);
+            }
+
+            int n = 6;
+
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine("{0} * {1} = {2}", n, i, n * i);
+            }
             Console.ReadLine();
 
         }
