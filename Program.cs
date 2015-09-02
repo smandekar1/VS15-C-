@@ -6,49 +6,96 @@ using System.Threading.Tasks;
 
 namespace MyFirstApp
 {
+    class Customer
+    {
+        int AcNo;
+        string Name;
+        double Bal;
+        string Contact;
+
+
+        public Customer()
+        {
+            Console.WriteLine("Hello Wolrd");
+        }
+
+
+        public Customer(int AcNo, string Name, double Bal):this()
+        {
+            this.AcNo = AcNo;
+            this.Name = Name;
+            this.Bal = Bal;
+           
+
+        }
+
+
+        public Customer(int AcNo, string Name, double Bal, string Contact) : this(AcNo, Name, Bal)
+        {
+            //this.AcNo = AcNo;
+            //this.Name = Name;
+            //this.Bal = Bal;
+            this.Contact = Contact;
+
+        }
+
+        public void Deposit(double amt)
+        {
+            Bal = Bal + amt;
+        }
+
+        public void Withdraw(double amt)
+        {
+            Bal = Bal - amt;
+        }
+
+
+
+        public void BalEnq()
+        {
+            Console.WriteLine("AcNo:{0}Name:{1} Bal: {2} Contact: {3}", AcNo, Name, Bal, Contact);
+        }
+
+        public void BalEnq(double amt, string f)
+        {
+            if(f=="D")
+            {
+                Bal += amt;
+            }
+            else if(f=="W")
+            {
+                Bal -= amt;
+
+            }
+            else
+            {
+                Console.WriteLine("Invalid Flag");
+            }
+            Console.WriteLine("AcNo:{0}Name:{1} Bal: {2} Contact: {3}", AcNo, Name, Bal, Contact);
+
+        }
+
+    }
+        
     class Program
     {
         static void Main(string[] args)
         {
-            //int[] a;
-            //A = new int[5];
+            Customer c = new Customer(1234,"Jack", 78000, "9898565");
 
 
-            int[] A = new int[5];
+            //c.CreateCustomer(1234, "Jack", 78000);
 
-            Console.WriteLine("Enter 5 Element");
-            for (int i = 0; i < A.Length; i++)
-            {
-                A[i] = int.Parse(Console.ReadLine());
-            }
-            Console.WriteLine("Eleements that you entered are : ");
-            for (int i = 0; i < A.Length; i++)
-            {
-                Console.WriteLine(A[i]);
-            }
+            //c.BalEnq();
 
-            Array.Sort(A);
-            Array.Reverse(A);
-            
+            //c.CreateCustomer(1234, "Jack", 78000);
 
-            Console.WriteLine("Eleements that you sorted are : ");
-            for (int i = 0; i < A.Length; i++)
-            {
-                Console.WriteLine(A[i]);
-            }
+            c.BalEnq();
 
-            int sum = 0;
-            for (int i = 0; i < A.Length; i++)
-            {
-                sum = sum + A[i];
-            }
-            Console.WriteLine("Sum is "+sum);
+            Customer c1 = new Customer(123, "Peter", 89000);
 
-            //foreach(int k in A)
-            //{
-            //    if(k%2==0)
-            //    Console.WriteLine(k);
-            //}
+            c1.BalEnq();
+
 
             Console.ReadLine();
         }
